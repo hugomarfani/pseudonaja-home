@@ -1,8 +1,7 @@
 
-
 body {
     background-color: #151515;
-    height: 3000px;
+    height: 200vh;
 }
 
 .glass {
@@ -16,4 +15,9 @@ body {
     backdrop-filter: blur( 12px );
     -webkit-backdrop-filter: blur( 12px );
   }
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
 }
