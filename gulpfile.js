@@ -17,6 +17,9 @@ const files = {
     scssPath: 'assets/css/main.scss',
     jsPath: [
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/gsap/dist/gsap.min.js',
+        'node_modules/lottie-web/build/player/lottie.min.js',
+        'node_modules/gsap/dist/ScrollTrigger.min.js',
         'node_modules/@popperjs/core/dist/umd/popper.js',
         'assets/js/main.js'
     ],

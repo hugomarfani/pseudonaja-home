@@ -1,11 +1,16 @@
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: #151515;
-    height: 200vh;
+    height: 300vh;
+    overflow-x: hidden;
 }
 
 .glass {
-    position:relative;
+  position:relative;
   background: rgba(21, 21, 21, 0.9);
 }
 /* if backdrop support: very transparent and blurred */
@@ -13,11 +18,35 @@ body {
   .glass {
     background: rgba(21, 21, 21, 0.5);
     backdrop-filter: blur( 12px );
-    -webkit-backdrop-filter: blur( 12px );
   }
 }
 
+// Radius of rounded corners
+
+.rounded-xl {
+  border-radius: .5rem;
+}
+
+.bg-img {
+  position: absolute;
+  top: 40vh;
+  left: 0;
+  width: 183vw;
+  height: auto;
+  z-index: -1;
+  transform: translateX(-50vw);
+  svg {
+    width: 100%;
+    height: auto;
+  } 
+}
+
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  max-width: 50px;
+  a {display: block;}
+}
+
+.z-100 {
+  z-index: 100;
 }
