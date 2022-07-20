@@ -142,7 +142,7 @@ body.nav-active {
 
 
 button {
-	--width: 180px;
+	--width: 200px;
 	--height: 60px;
 	border: 0;
 	position: relative;
@@ -209,14 +209,14 @@ button {
 
 	&:hover {
 		&::after {
-			transform: translateX(65%);
+			transform: translateX(70%);
 		}
 
 		.icon-container {
-			transform: translateX(125%);
+			transform: translateX(115%);
 			.icon {
 				&--left {
-					transform: translateX(-117%);
+					transform: translateX(-65%);
 					opacity: 1;
 				}
 				&--right {

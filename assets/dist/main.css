@@ -8082,7 +8082,7 @@ body.nav-active {
     --btn-bg: #B16FF8;
     --bg: ##B16FF8; }
   .btn-container button {
-    --width: 180px;
+    --width: 200px;
     --height: 60px;
     border: 0;
     position: relative;
@@ -8135,11 +8135,11 @@ body.nav-active {
       z-index: 1;
       transition: transform 500ms ease; }
     .btn-container button:hover::after {
-      transform: translateX(65%); }
+      transform: translateX(70%); }
     .btn-container button:hover .icon-container {
-      transform: translateX(125%); }
+      transform: translateX(115%); }
       .btn-container button:hover .icon-container .icon--left {
-        transform: translateX(-117%);
+        transform: translateX(-65%);
         opacity: 1; }
       .btn-container button:hover .icon-container .icon--right {
         transform: translateX(200%);
