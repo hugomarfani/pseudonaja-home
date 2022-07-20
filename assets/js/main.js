@@ -13,13 +13,6 @@ $("document").ready(function () {
       autoplay: false,
       path: window.location.origin + "/assets/lottie/bg-1.json",
     })),
-    (line2Anim = lottie.loadAnimation({
-        container: document.querySelector("#bg-img2"),
-        renderer: "svg",
-        loop: false,
-        autoplay: false,
-        path: window.location.origin + "/assets/lottie/bg-2.json",
-      })),
   ];
   // Adds frame parameter to enable scrubbing with scrollTrigger
   lotties.forEach((l) => (l.frame = 0));
@@ -42,8 +35,8 @@ $("document").ready(function () {
       scrollTrigger: {
         trigger: "#bg-img1",
         start: "top center",
-        end: "center center",
-        markers: false,
+        end: "center top",
+        markers: true,
         pin: false,
         invalidateOnRefresh: true,
         scrub: true,
@@ -55,23 +48,6 @@ $("document").ready(function () {
       duration: 2,
       onUpdate: () => line1Anim.goToAndStop(line1Anim.frame, true),
     });
-    let line2Tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: "#bg-img2",
-          start: "top bottom",
-          end: "center center",
-          markers: false,
-          pin: false,
-          invalidateOnRefresh: true,
-          scrub: true,
-        },
-      });
-      line2Tl.to(line2Anim, {
-        frame: line1Anim.totalFrames - 1,
-        ease: "none",
-        duration: 2,
-        onUpdate: () => line2Anim.goToAndStop(line2Anim.frame, true),
-      })
   }
 });
 

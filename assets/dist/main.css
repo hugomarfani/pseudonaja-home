@@ -7981,7 +7981,8 @@ body {
   padding-top: 96px; }
 
 .site-wrapper {
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  overflow-y: hidden; }
 
 .glass {
   position: relative;
@@ -8037,22 +8038,30 @@ a {
 body.nav-active {
   overflow: hidden; }
 
-.top-40vh {
-  top: 50vh; }
-
 .rounded-xl {
   border-radius: 1rem; }
 
+.top-40vh {
+  top: 50vh; }
+  @media (max-width: 575.98px) {
+    .top-40vh {
+      top: 20vh; } }
+
 .bg-img {
+  overflow-y: hidden;
   position: absolute;
   left: 0;
-  width: 183vw;
+  width: 150vw;
   height: auto;
   z-index: 0;
-  transform: translateX(-50vw); }
+  transform: translateX(-20vw); }
   .bg-img svg {
     width: 100%;
     height: auto; }
+  @media (max-width: 575.98px) {
+    .bg-img {
+      width: 250vw;
+      transform: translateX(-50vw); } }
 
 .logo {
   width: 100%;
