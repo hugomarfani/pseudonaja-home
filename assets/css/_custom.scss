@@ -28,6 +28,12 @@ a{
     text-decoration: none;
 }
 
+@include media-breakpoint-down(sm) {
+  .display-1 {
+    font-size: 100px;
+  }
+}
+
 .nav-menu-bar {
 	transition: all 0.5s;
 	a {
