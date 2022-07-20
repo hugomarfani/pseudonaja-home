@@ -5,6 +5,11 @@ html {
 body {
   background-color: #151515;
   overflow-x: hidden;
+  padding-top: 96px;
+}
+
+.site-wrapper {
+	overflow-x: hidden
 }
 
 .glass {
@@ -17,6 +22,56 @@ body {
     background: rgba(21, 21, 21, 0.5);
     backdrop-filter: blur(12px);
   }
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-menu-bar {
+	transition: all 0.5s;
+	background-color: #151515;
+	a {
+		font-size:1em;
+		font-weight: 600;
+		color: #fff;
+	}
+	a:hover {
+		transition: all 0.2s;
+		color: #B16FF8;
+	}
+	li {
+		display: inline;
+		flex: 1;
+		padding-left: 20px;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	@include media-breakpoint-down(md) {
+		position: fixed;
+		top: -110vh;
+		height: 100vh;
+		width: 100vw;
+		left: 0;
+		a {
+			font-size:2em;
+		}
+		&.active {
+			top:0;
+		}
+		li {
+			display: block;
+			padding-left: 0px;
+		}
+	}  
+}
+
+body.nav-active {
+	overflow: hidden;
 }
 
 // Radius of rounded corners
@@ -44,7 +99,8 @@ body {
 
 .logo {
   width: 100%;
-  max-width: 50px;
+  margin: 0 auto;
+  display: inline-block;
   a {
     display: block;
   }

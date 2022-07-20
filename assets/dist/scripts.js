@@ -12905,7 +12905,12 @@ return jQuery;
 //# sourceMappingURL=popper.js.map
 
 $("document").ready(function () {
-  // Animations
+  // Hamburger menu
+    $('html').on('click', '.ham', function(event){
+    event.preventDefault();
+    $('.nav-menu-bar').toggleClass('active');
+
+});
   let lotties = [
     (line1Anim = lottie.loadAnimation({
       container: document.querySelector("#bg-img1"),
@@ -12975,5 +12980,6 @@ $("document").ready(function () {
       })
   }
 });
+
 
 //# sourceMappingURL=scripts.js.map

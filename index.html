@@ -1,201 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/dist/main.css">
+    <title>Pseudonaja</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b16ff8">
+    <meta name="msapplication-TileColor" content="#151515">
+    <meta name="theme-color" content="#151515">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="/assets/dist/scripts.js"></script>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="position-relative">
+        <div class="bg-img top-40vh" id="bg-img1"></div>
+        <header class="position-fixed w-100 top-0 left-0 py-2 glass l-4 z-100">
+          <div class="container px-0">
+            <div class="row">
+              <div class="col-5 d-flex justify-content-start z-100">
+                <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <path
+                          class="line top"
+                          d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+                    <path
+                          class="line middle"
+                          d="m 30,50 h 40" />
+                    <path
+                          class="line bottom"
+                          d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+                </svg>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="assets/dist/main.css">
-  <title>Pseudonaja</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b16ff8">
-  <meta name="msapplication-TileColor" content="#151515">
-  <meta name="theme-color" content="#151515">
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
-    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
-    crossorigin="anonymous"></script>
-  <script src="/assets/dist/scripts.js"></script>
-</head>
-
-<body>
-  <div class="position-relative">
-    <div class="bg-img top-40vh" id="bg-img1"></div>
-    
-    <header class="position-sticky top-0 left-0 py-2 glass l-4 z-100">
-      <div class="container">
-        <div class="row">
-          <div class="col-4 d-flex align-items-center">
-            <div class="logo">
-              <a href="#">
-                <img class="img-fluid" src="/assets/img/logo.svg" alt="Pseudonaja Logo">
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-8 align-self-center">
-            <div class="">
-              <nav class="navbar navbar-expand-sm navbar-dark">
-                <div class="container-fluid allign-items-end">
-                  <button class="navbar-toggler d-inline-block d-lg-none" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse d-flex float-end justify-content-end navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="https://pseudonaja.repl.co/">IDE</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Docs</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">FAQs</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-    </header>
-
-    <div class="container-xl text-center">
-      <div class="container-xl">
-        <h1 class='py-5 text-primary display-1'>Pseudonaja</h1>
-      </div>
-      <h3 class='text-secondary display-2'>CIE Spec Pseudocode IDE</h3>
-      <img src="assets/img/demo.png" class="img-fluid position-relative p-5"
-        alt="Computer with Pseudonaja running in a window">
-      <div class="containter-sm w-100">
-        <div class="justify-content-center row p-4">
-          <div class="col-sm-12 glass rounded-xl text-center text-white p-4">
-            <h3 class="p-4">About Pseudonaja</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra, lectus nec eleifend hendrerit, eros
-              eros porta orci, efficitur suscipit nisi turpis nec nisi. Aenean auctor diam non diam consectetur, sit amet
-              varius leo cursus. Morbi posuere magna orci. Mauris laoreet ligula fringilla dui convallis, vel feugiat
-              neque ornare. Integer et lobortis sapien. Nunc ut ornare erat, et sodales diam. Morbi id auctor massa. In
-              condimentum tempus pellentesque. Fusce et odio enim. Nunc lacinia pellentesque risus et euismod.
-              Pellentesque commodo tempus semper. Mauris lacus nisl, interdum non ultricies a, tincidunt eget dui.</p>
-            <a href="https://pseudonaja.repl.co/" class="">
-              <div class="btn-container">
-                <button>
-                  <span class="text">To the Editor</span>
-                  <div class="icon-container">
-                    <div class="icon icon--left">
-                      <svg>
-                        <use xlink:href="#arrow-right"></use>
-                      </svg>
-                    </div>
-                    <div class="icon icon--right">
-                      <svg>
-                        <use xlink:href="#arrow-right"></use>
-                      </svg>
-                    </div>
-                  </div>
-                </button>
               </div>
-            </a>
-
-            <svg style="display: none;">
-              <symbol id="arrow-right" viewBox="0 0 20 10">
-                <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
-              </symbol>
-            </svg>
+              <div class="col-2 d-flex justify-content-center z-100">
+                <div class="logo">
+                  <a href="#">
+                    <img class="img-fluid" src="/assets/img/logo.svg" alt="Pseudonaja Logo">
+                  </a>
+                </div>
+              </div>
+              <div class="nav-menu-bar col-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-end">
+                <div class="collapse d-flex float-md-end text-center text-md-end">
+                  <ul class="allign-md-middle m-0">
+                    <li>
+                      <a class="active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li>
+                      <a href="https://pseudonaja.repl.co/">IDE</a>
+                    </li>
+                    <li>
+                      <a href="#">Docs</a>
+                    </li>
+                    <li>
+                      <a href="#">FAQs</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </header>
+        <div class="container-xl text-center">
+          <div class="container-xl">
+            <h1 class='py-5 text-primary display-1'>Pseudonaja</h1>
+          </div>
+          <h3 class='text-secondary display-2'>CIE Spec Pseudocode IDE</h3>
+          <img src="assets/img/demo.png" class="img-fluid position-relative p-5" alt="Computer with Pseudonaja running in a window">
+          <div class="containter-md w-100">
+            <div class="justify-content-center row p-4">
+              <div class="col-12 glass rounded-xl text-center text-white p-4">
+                <h3 class="p-4">About Pseudonaja</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra, lectus nec eleifend hendrerit, eros eros porta orci, efficitur suscipit nisi turpis nec nisi. Aenean auctor diam non diam consectetur, sit amet varius leo cursus. Morbi posuere magna orci. Mauris laoreet ligula fringilla dui convallis, vel feugiat neque ornare. Integer et lobortis sapien. Nunc ut ornare erat, et sodales diam. Morbi id auctor massa. In condimentum tempus pellentesque. Fusce et odio enim. Nunc lacinia pellentesque risus et euismod. Pellentesque commodo tempus semper. Mauris lacus nisl, interdum non ultricies a, tincidunt eget dui.</p>
+                <a href="https://pseudonaja.repl.co/">
+                  <div class="btn-container">
+                    <button>
+                      <span class="text">To the Editor</span>
+                      <div class="icon-container">
+                        <div class="icon icon--left">
+                          <svg>
+                            <use xlink:href="#arrow-right"></use>
+                          </svg>
+                        </div>
+                        <div class="icon icon--right">
+                          <svg>
+                            <use xlink:href="#arrow-right"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </button>
+                  </div>
+                </a>
+                <svg style="display: none;">
+                  <symbol id="arrow-right" viewBox="0 0 20 10">
+                    <path d="M14.84 0l-1.08 1.06 3.3 3.2H0v1.49h17.05l-3.3 3.2L14.84 10 20 5l-5.16-5z"></path>
+                  </symbol>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="justify-content-center row py-2 py-md-8">
+            <div class="col-12 col-md-4 p-4">
+              <div class="glass rounded-xl text-center text-white p-4">
+                <img src="assets/img/icons/play_button.svg" class="img-fluid p-3 icon" alt="Play Icon">
+                <h6>Run and Test Your Code</h6>
+                <p>Simply write your program in the editor and watch it run live in the console, just like real code.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 p-4">
+              <div class="glass rounded-xl text-center text-white p-4">
+                <img src="assets/img/icons/sparkles.svg" class="img-fluid p-3 icon" alt="Sparkles Icon">
+                <h6>Editor-Rich Features</h6>
+                <p>Enjoy features like dynamic syntax highlighting, find and replace, auto-indentation and code folding, just like a real IDE.</p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 p-4">
+              <div class="glass rounded-xl text-center text-white p-4">
+                <img src="assets/img/icons/text_cursor.svg" class="img-fluid p-3 icon" alt="Play Icon">
+                <h6>Smart Suggestions</h6>
+                <p>Suggestions help you write flawless code with auto-complete and error highlighting, just like a real language.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="justify-content-center row py-5 py-md-8">
-        <div class="col-12 col-md-4 p-4">
-          <div class="glass rounded-xl text-center text-white p-4">
-            <img src="assets/img/icons/play_button.svg" class="img-fluid p-3 icon" alt="Play Icon">
-            <h6>Run and Test Your Code</h6>
-            <p>Simply write your program in the editor and watch it run live in the console, just like real code.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 p-4">
-          <div class="glass rounded-xl text-center text-white p-4">
-            <img src="assets/img/icons/sparkles.svg" class="img-fluid p-3 icon" alt="Sparkles Icon">
-            <h6>Editor-Rich Features</h6>
-            <p>Enjoy features like dynamic syntax highlighting, find and replace, auto-indentation and code folding, just
-              like a real IDE.</p>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 p-4">
-          <div class="glass rounded-xl text-center text-white p-4">
-            <img src="assets/img/icons/text_cursor.svg" class="img-fluid p-3 icon" alt="Play Icon">
-            <h6>Smart Suggestions</h6>
-            <p>Suggestions help you write flawless code with auto-complete and error highlighting, just like a real
-              language.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="position-relative overflow-hidden py-5 py-md-8">
-    <div class="bg-img" id="bg-img2"></div>
-    <div class="text-center">
-      <div class="container-xl text-white">
-        <div class="containter-sm w-100">
-          <div class="justify-content-center row p-4">
-            <div class="col-sm-12 glass rounded-xl text-center text-white p-4">
-              <h3 class="p-4">FAQs</h3>
-              <p>Some frequently asked questions from our users.</p>
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                      the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Accordion Item #2
-                    </button>
-                  </h2>
-                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                      the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine
-                      this being filled with some actual content.</div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                      Accordion Item #3
-                    </button>
-                  </h2>
-                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate
-                      the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more
-                      exciting happening here in terms of content, but just filling up the space to make it look, at
-                      least at first glance, a bit more representative of how this would look in a real-world
-                      application.</div>
+      <div class="position-relative overflow-hidden py-5 py-md-8">
+        <div class="bg-img" id="bg-img2"></div>
+        <div class="text-center">
+          <div class="container-xl text-white">
+            <div class="containter-sm w-100">
+              <div class="justify-content-center row p-4">
+                <div class="col-sm-12 glass rounded-xl text-center text-white p-4">
+                  <h3 class="p-4">FAQs</h3>
+                  <p>Some frequently asked questions from our users.</p>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> Accordion Item #1 </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body. </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> Accordion Item #2 </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content. </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> Accordion Item #3 </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application. </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -204,13 +170,5 @@
         </div>
       </div>
     </div>
-  </div>
-
-
-  
-
-
-
-</body>
-
+  </body>
 </html>

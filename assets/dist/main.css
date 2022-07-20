@@ -7936,11 +7936,48 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+.hamRotate.active {
+  transform: rotate(45deg); }
+
+.hamRotate180.active {
+  transform: rotate(180deg); }
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #fff;
+  stroke-width: 4;
+  stroke-linecap: round; }
+
+.ham1 .top {
+  stroke-dasharray: 40 139; }
+
+.ham1 .bottom {
+  stroke-dasharray: 40 180; }
+
+.ham1.active .top {
+  stroke-dashoffset: -98px; }
+
+.ham1.active .bottom {
+  stroke-dashoffset: -138px; }
+
 html {
   scroll-behavior: smooth; }
 
 body {
   background-color: #151515;
+  overflow-x: hidden;
+  padding-top: 96px; }
+
+.site-wrapper {
   overflow-x: hidden; }
 
 .glass {
@@ -7953,6 +7990,45 @@ body {
     background: rgba(21, 21, 21, 0.5);
     -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px); } }
+
+a {
+  text-decoration: none; }
+
+.nav-menu-bar {
+  transition: all 0.5s;
+  background-color: #151515; }
+  .nav-menu-bar a {
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff; }
+  .nav-menu-bar a:hover {
+    transition: all 0.2s;
+    color: #B16FF8; }
+  .nav-menu-bar li {
+    display: inline;
+    flex: 1;
+    padding-left: 20px; }
+  .nav-menu-bar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  @media (max-width: 767.98px) {
+    .nav-menu-bar {
+      position: fixed;
+      top: -110vh;
+      height: 100vh;
+      width: 100vw;
+      left: 0; }
+      .nav-menu-bar a {
+        font-size: 2em; }
+      .nav-menu-bar.active {
+        top: 0; }
+      .nav-menu-bar li {
+        display: block;
+        padding-left: 0px; } }
+
+body.nav-active {
+  overflow: hidden; }
 
 .top-40vh {
   top: 40vh; }
@@ -7973,7 +8049,8 @@ body {
 
 .logo {
   width: 100%;
-  max-width: 50px; }
+  margin: 0 auto;
+  display: inline-block; }
   .logo a {
     display: block; }
 
