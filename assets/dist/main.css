@@ -7972,6 +7972,12 @@ textarea.form-control-lg {
 html {
   scroll-behavior: smooth; }
 
+::-moz-selection {
+  background: #8964AC; }
+
+::selection {
+  background: #8964AC; }
+
 body {
   background-color: #151515;
   overflow-x: hidden;
@@ -7993,6 +7999,10 @@ body {
 
 a {
   text-decoration: none; }
+
+@media (max-width: 575.98px) {
+  .display-1 {
+    font-size: 3.7rem !important; } }
 
 .nav-menu-bar {
   transition: all 0.5s; }

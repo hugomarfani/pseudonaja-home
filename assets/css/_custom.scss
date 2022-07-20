@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection {
+	background: #8964AC;
+  }
+
 body {
   background-color: #151515;
   overflow-x: hidden;
@@ -30,7 +34,7 @@ a{
 
 @include media-breakpoint-down(sm) {
   .display-1 {
-    font-size: 100px;
+    font-size: 3.7rem !important;
   }
 }
 
