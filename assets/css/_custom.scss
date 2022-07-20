@@ -30,7 +30,6 @@ a{
 
 .nav-menu-bar {
 	transition: all 0.5s;
-	background-color: #151515;
 	a {
 		font-size:1em;
 		font-weight: 600;
@@ -52,6 +51,7 @@ a{
 	}
 	
 	@include media-breakpoint-down(md) {
+		background-color: #151515;
 		position: fixed;
 		top: -110vh;
 		height: 100vh;

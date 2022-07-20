@@ -7995,8 +7995,7 @@ a {
   text-decoration: none; }
 
 .nav-menu-bar {
-  transition: all 0.5s;
-  background-color: #151515; }
+  transition: all 0.5s; }
   .nav-menu-bar a {
     font-size: 1em;
     font-weight: 600;
@@ -8014,6 +8013,7 @@ a {
     padding: 0; }
   @media (max-width: 767.98px) {
     .nav-menu-bar {
+      background-color: #151515;
       position: fixed;
       top: -110vh;
       height: 100vh;
